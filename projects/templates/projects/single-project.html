@@ -4,6 +4,10 @@
 
 <p>single project template</p>
 {{project}}
+{% for tag in project.tags.all %}
+<p style="border: 3px; color: aqua;" >{{tag}}</p>
+{% endfor %}
+{{project.vote_total}}
 
 {% endblock content %}
 
