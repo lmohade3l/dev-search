@@ -2,8 +2,10 @@
 
 {% block content %}
 
-<p>single project template</p>
+<img style='width: 500px;' src="{{ project.featured_image.url }}">
 {{project}}
+<hr/>
+{{project.description}}
 {% for tag in project.tags.all %}
 <p style="border: 3px; color: aqua;" >{{tag}}</p>
 {% endfor %}

@@ -1,2 +1,5 @@
-<h1>THIS IS THE NAVIGATION BAR</h1>
+{% load static %}
+
+<img src="{% static 'images/logo.svg' %}" />
+<a href="{% url 'create-project' %}">Add Project</a>
 <hr>
